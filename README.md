@@ -26,7 +26,7 @@ So the technologies:
 
 # Online demo?
 
-// TODO: Coming soon
+## https://davtk-forum-h2ah9.ondigitalocean.app
 
 # It's ugly
 
@@ -39,7 +39,16 @@ In every case you can notice full responsive design and various CSS features lik
 
 # Can I run it locally?
 
-Sure thing. // TODO: I will tell you how.
+Sure thing.
+
+*To be completely honest - I am not sure what is the best practice to handle env vars in Vue. 
+Frontend application does not have access to process.env, and I could not find any KISS solution on Google - everything I found was pretty complicated.*
+
+So easy way, how to run this: 
+
+- in openapi.yaml change `servers > url` value to your backend URL,
+- `docker build` - your image will be built with given URL,
+- `docker run` and don't forget to publish port 80.
 
 # You like it?
 
